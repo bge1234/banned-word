@@ -1,14 +1,14 @@
 function checkBanned(bannedWord, oldList) {
   var newList = [];
   for (var i = 0; i < oldList.length; i++) {
-    if (oldList[i] != bannedWord)
+    if (oldList[i] !== bannedWord)
       newList.push(oldList[i]);
   }
   return newList;
 };
 
 function checkWord(bannedWord, listElement) {
-  if (listElement != bannedWord)
+  if (listElement !== bannedWord)
     return true;
   else
     return false;
