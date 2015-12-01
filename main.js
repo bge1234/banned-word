@@ -23,3 +23,10 @@ function checkBannedHigherOrder(bannedWord, oldList, callback) {
   }
   return newList;
 };
+
+function processNames(names, banned) {
+  var newArray = names.filter(function(name) {
+    return name !== banned; //names.filter will filter out anything that doesn't return true here.
+  });
+  return newArray;
+};
