@@ -1,8 +1,8 @@
-function checkBanned(banned, list) {
+function checkBanned(bannedWord, oldList) {
   var newList = [];
-  for (var i = 0; i < list.length; i++) {
-    if (list[i] != banned)
-      newList.push(list[i]);
+  for (var i = 0; i < oldList.length; i++) {
+    if (oldList[i] != bannedWord)
+      newList.push(oldList[i]);
   }
   return newList;
 };
